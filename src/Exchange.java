@@ -7,6 +7,7 @@ public class Exchange {
         double cost = scanner.nextDouble();
         System.out.print("Введите количество денег, которое вы дали продавцу: ");
         double money = scanner.nextDouble();
+        scanner.close();
         double change = money - cost;
         if (change < 0) {
             System.out.println("Недостаточно денег");
